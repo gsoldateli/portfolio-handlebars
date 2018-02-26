@@ -18,9 +18,8 @@
 
 		return loading;
 	}
-
-	document.addEventListener("DOMContentLoaded", function() {
-	  	//Get all images to be lazy loaded
+	function init() {
+		//Get all images to be lazy loaded
 		$images = document.querySelectorAll('img[data-src]');
 
 		//To each image
@@ -35,7 +34,9 @@
 
 			$images[x].onload = onLoadImage($images[x],loading);
 		}
-	});
+	}
+
+	libraries.register(init);
 
 
 })(window);

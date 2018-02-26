@@ -96,5 +96,8 @@ window.carousel = function(elements) {
 	}
 
 	return car;
-}();
+};
+
+	libraries.register(carousel);
+	
 })(window);

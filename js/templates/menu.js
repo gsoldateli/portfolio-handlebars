@@ -13,7 +13,7 @@
 		holderDesktop.innerHTML = menuDesktopTemplate(data);
 		menuMobileHolder.innerHTML = menuMobileTemplate(data);
 	};
-
-	loadMenu(); 
-
+ 
+	//loadMenu(); 
+	window.templates.register(loadMenu);
 })(window,Handlebars);

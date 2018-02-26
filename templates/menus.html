@@ -1,0 +1,28 @@
+<!-- MENUS -->
+	<script id="menu-desktop-template" type="text/x-handlebars-template">
+		<ul class="menu">
+			{{#each menu as |item|}}
+				<li><a onclick="scrollToElement('{{item.goto}}'); return false;" href="#" class="col3 menu__link">
+					{{item.label}}
+			</a></li>
+			{{/each}}
+		</ul>
+	</script>
+	<script id="menu-mobile-template" type="text/x-handlebars-template">
+		{{>menu-mobile-list}}
+		
+		<div class="disclaimer">
+			<span class="tooltip">Do <b>you</b> know this website was developed by <b>Guilherme Soldateli</b> in 2017?</span>
+			<img src="images/dog.png" class="disclaimer__image" alt="Dog reading newspaper"/>
+		</div>
+	</script>
+	<script id="menu-mobile-list" type="text/x-handlebars-template">
+		<ul class="menu menu--sidebar">
+			{{#each menu as |item|}}
+				<li><a onclick="scrollToElement('{{item.goto}}',600,closeLateralMenu); return false;" href="#" class="col12 menu__link">
+							{{item.label}}
+					</a></li>
+			{{/each}}		
+		</ul>
+	</script>
+	<!-- END MENUS -->

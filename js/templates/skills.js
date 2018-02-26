@@ -13,6 +13,6 @@
 		skillsHolder.innerHTML = skillsTemplate(data);
 	};
  
-	loadSkills();  
+	window.templates.register(loadSkills);
 
 })(window,Handlebars);

@@ -1,0 +1,50 @@
+<!-- GRAPH -->
+	<script id="skills-template" type="text/x-handlebars-template">
+		{{log this}}
+		{{>bar skills.skillbar}}
+		{{#with skills.areas}}
+		<div class="row">
+			<div class="col6">{{> graph frontend}}</div>
+			<div class="col6">{{> graph backend}}</div>
+		</div>
+		<div class="row">
+			<div class="col3">&nbsp;</div>
+			<div class="col6 ">{{> graph backend}}</div>
+		</div>
+		{{/with}}
+	</script>
+
+	<script id="graph-template" type="text/x-handlebars-template">
+	
+	<div class="graph">
+		<h4 class="graph__title">{{name}}</h4>
+		<ul class="graph-label">
+			<li class="graph-label__item">Expert</li>
+			<li class="graph-label__item">Proficient</li>
+			<li class="graph-label__item">Competent</li>
+			<li class="graph-label__item">Learning</li>
+		</ul>
+		<ul class="graph-bars">
+			{{#each skills as |skill|}}
+				{{#with skill}}
+				<li class="graph-bar__item">
+					<div class="graph-bar__bar graph-bar__bar--{{expertise}}">
+						<span class="graph-bar__item-label">{{label}}</span> 
+						<span class="tooltip"><b>{{time}}:</b> {{timelabel}}</span>
+					</div>
+				</li>
+				{{/with}}
+			{{/each}}
+		</ul>
+	</div>	
+	</script>
+	<script id="bar-template" type="text/x-handlebars-template">
+		{{log this}}
+		{{#if this}}
+		<div class="horizontal-bar">
+			<div class="horizontal-bar__item horizontal-bar__item--frontend" style="width:{{front}}%;">{{front}}%</div>
+			<div class="horizontal-bar__item horizontal-bar__item--backend" style="width:{{back}}%;">{{back}}%</div>
+		</div>
+		{{/if}}
+	</script>
+	<!-- END GRAPH -->

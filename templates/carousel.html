@@ -1,0 +1,13 @@
+<!-- CAROUSSEL -->
+<script id="carousel-template" type="text/x-handlebars-template">
+<div class="carousel">
+	<ul class="carousel__items">
+		{{#each this as |image|}}
+		<li class="carousel__item {{#if @first}}carousel__item--active{{/if}}">
+			<img data-src="{{image}}" alt="">
+		</li>
+		{{/each}}
+	</ul>
+</div>
+</script>
+<!-- END CAROUSSEL -->

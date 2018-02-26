@@ -12,6 +12,6 @@
 		projectsHolder.innerHTML = tabsTemplate(data);
 	};
  
-	loadProjects();  
-
+	//loadProjects();  
+	window.templates.register(loadProjects);
 })(window,Handlebars);

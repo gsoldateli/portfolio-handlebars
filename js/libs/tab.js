@@ -46,7 +46,6 @@
 			});
 		}
 	}
-
-	document.addEventListener("DOMContentLoaded", init); 
+	libraries.register(init);
  
 })(window);

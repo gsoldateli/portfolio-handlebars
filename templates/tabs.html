@@ -1,0 +1,37 @@
+<!-- TABS -->
+	<script id="tabs-template" type="text/x-handlebars-template">
+			<div class="col2">
+				{{> tab-list project.items}}
+			</div>
+			<div class="col10 tab__container">
+				{{>tab-content project.items}}
+			</div>
+	</script>
+	<script id="tabs-tab-list-template" type="text/x-handlebars-template">
+		<ul id="tabs" class="tab">
+			{{#each this as |project| }}
+				<li class="tab__title tab__title--{{#if @first}}selected{{/if}}" data-tab-id="tab-{{project.id}}">{{project.name}}</li>
+			{{/each}}
+		</ul>
+	</script>
+
+	<script id="tabs-tab-content-template" type="text/x-handlebars-template">
+		{{#each this as |project| }}
+				<span class="tab__title tab__title--selected" data-tab-id="tab-{{project.id}}">{{project.name}}</span>
+
+			
+			<div class="tab__content tab__content--{{#if @first}}selected{{/if}}" data-content-id="tab-{{project.id}}">
+				{{>carousel project.images}}
+				<article class="project">
+					<h4 class="project__title">{{project.name}}</h4>
+					<p  class="project__description">{{project.description}}</p>
+					<span class="project__links">
+						<a  href="{{project.live}}" target="__BLANK" class="btn btn--primary"> <span class="fa fa-globe"></span> Live Example</a> 
+						<a href="{{project.repository}}" target="__BLANK" class="btn btn--discrete"> <span class="fa fa-github"></span> Link to github</a>
+					</span>
+				</article>
+
+			</div>					
+			{{/each}}		
+	</script>
+	<!-- END TABS -->

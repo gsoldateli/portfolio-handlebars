@@ -122,7 +122,7 @@ function Gallery() {
 
 	}
 
-	this.init();
+	//this.init();
 }
 
 var $G = new Gallery();

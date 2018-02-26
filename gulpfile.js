@@ -10,7 +10,12 @@ var imagemin = require('gulp-imagemin');
 var config = {
 	dist: 'dist/',
 	imgIn: 'images/**/*.{jpg,jpeg,png,gif}',
-	jsIn: 'js/**/*.js',
+	jsIn: [
+    'vendors/handlebars.js',
+    'js/load-templates.js',
+    'js/templates/*.js',
+    'js/libs/*.js'
+  ],
 	cssIn: 'css/**/*.css',
 	cssOut: 'dist/css/',
 	cssOutName: 'style.min.css',

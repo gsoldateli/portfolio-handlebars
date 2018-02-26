@@ -1,0 +1,179 @@
+{
+  "name": "Guilherme Soldateli",
+  "menu": 
+     [
+		{
+		"goto": "#about-section",
+		 "label": "About"
+		},
+		{
+		"goto": "#project-section",
+		"label": "Projects"
+		}, 
+		{
+		"goto": "#skills-section",
+		"label": "Skills"
+		},
+		{
+		"goto": "#contact-section",
+		"label": "Contact"
+		}
+    ],
+    "home": {
+    	"title": "Hello! My name is Guilherme. <br>  And I love building things."
+    },
+    "projects": 
+    {
+      "title": "Projects",
+      "description": "Here down are some projects I've worked on during my BOV Academy studies.",
+      "items": [
+          {
+            "id": "calculator",
+            "name": "Calculator",
+            "description": "This is a CSS3 + Javascript calculator. Mathematical operations aren't implemented yet.",
+            "repository": "https://github.com/gsoldateli/calculator",
+            "live": "https://gsoldateli.github.io/calculator/",
+            "images": [
+            	"images/projects/calculator/normal.jpg",
+            	"images/projects/calculator/pressed.jpg"
+            ]
+          },
+          {
+            "id": "calculator2",
+            "name": "Calculator2",
+            "description": "This is a CSS3 + Javascript calculator. Mathematical operations aren't implemented yet.",
+            "repository": "https://github.com/gsoldateli/calculator",
+            "live": "https://gsoldateli.github.io/calculator/",
+            "images": [
+                "images/projects/calculator/normal.jpg",
+                "images/projects/calculator/pressed.jpg",
+                "images/projects/calculator/normal.jpg",
+                "images/projects/calculator/pressed.jpg",
+                "images/projects/calculator/normal.jpg",
+                "images/projects/calculator/pressed.jpg"
+            ]
+          }
+        ]
+    },
+    "skills" : {
+    	"title": "Skills",
+    	"description": "These are some of my perspectives on how secure I feel on my abilities.",
+        "skillbar": {        
+    	"front": 75,
+    	"back": 25
+        },
+    	"areas": {
+    		"frontend": {
+    			"name": "Frontend Devlopment",
+    			"skills": [
+    				{
+    					"label": "Javascript",
+    					"expertise": "competent",
+    					"time": "3 Years",
+    					"timelabel": "Monkey Coding"
+    				},
+    				{
+    					"label": "CSS",
+    					"expertise": "competent",
+    					"time": "3 Years",
+    					"timelabel": "Making it work"
+    				},
+    				{
+    					"label": "jQuery",
+    					"expertise": "proficient",
+    					"time": "3 Years",
+    					"timelabel": "Being dependent on it."
+    				},
+    				{
+    					"label": "Bootstrap",
+    					"expertise": "proficient",
+    					"time": "3 Years",
+    					"timelabel": "Being dependent on it."
+    				},
+    				{
+    					"label": "Tooling",
+    					"expertise": "",
+    					"time": "6 Months",
+    					"timelabel": " Getting my hands on ( npm | gulp | grunt)."
+    				}]
+    			
+    		},
+            "backend": {
+    			"name": "Backend Devlopment",
+    			"skills": [
+    				{
+    					"label": "Javascript",
+    					"expertise": "competent",
+    					"time": "3 Years",
+    					"timelabel": "Monkey Coding"
+    				},
+    				{
+    					"label": "CSS",
+    					"expertise": "competent",
+    					"time": "3 Years",
+    					"timelabel": "Making it work"
+    				},
+    				{
+    					"label": "jQuery",
+    					"expertise": "proficient",
+    					"time": "3 Years",
+    					"timelabel": "Being dependent on it."
+    				},
+    				{
+    					"label": "Bootstrap",
+    					"expertise": "proficient",
+    					"time": "3 Years",
+    					"timelabel": "Being dependent on it."
+    				},
+    				{
+    					"label": "Tooling",
+    					"expertise": "",
+    					"time": "6 Months",
+    					"timelabel": " Getting my hands on ( npm | gulp | grunt)."
+    				}
+    			]
+    		},
+    		"life": {
+    			"name": "Life Skills",
+    			"skills": [
+    				{
+    					"label": "Javascript",
+    					"expertise": "competent",
+    					"time": "3 Years",
+    					"timelabel": "Monkey Coding"
+    				},
+    				{
+    					"label": "CSS",
+    					"expertise": "competent",
+    					"time": "3 Years",
+    					"timelabel": "Making it work"
+    				},
+    				{
+    					"label": "jQuery",
+    					"expertise": "proficient",
+    					"time": "3 Years",
+    					"timelabel": "Being dependent on it."
+    				},
+    				{
+    					"label": "Bootstrap",
+    					"expertise": "proficient",
+    					"time": "3 Years",
+    					"timelabel": "Being dependent on it."
+    				},
+    				{
+    					"label": "Tooling",
+    					"expertise": "",
+    					"time": "6 Months",
+    					"timelabel": " Getting my hands on ( npm | gulp | grunt)."
+    				}
+    			]
+    		}
+    	}
+    },
+    "contact": {
+    	"title": "Contact",
+    	"description": "You can check my contacts below. If you need something else, click on the card and talk to my beloved assistant."
+    }
+      
+  
+}

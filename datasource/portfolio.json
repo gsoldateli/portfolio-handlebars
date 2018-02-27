@@ -34,25 +34,104 @@
             "repository": "https://github.com/gsoldateli/calculator",
             "live": "https://gsoldateli.github.io/calculator/",
             "images": [
-            	"images/projects/calculator/normal.jpg",
-            	"images/projects/calculator/pressed.jpg"
-            ]
-          },
-          {
-            "id": "calculator2",
-            "name": "Calculator2",
-            "description": "This is a CSS3 + Javascript calculator. Mathematical operations aren't implemented yet.",
-            "repository": "https://github.com/gsoldateli/calculator",
-            "live": "https://gsoldateli.github.io/calculator/",
-            "images": [
-                "images/projects/calculator/normal.jpg",
-                "images/projects/calculator/pressed.jpg",
-                "images/projects/calculator/normal.jpg",
-                "images/projects/calculator/pressed.jpg",
                 "images/projects/calculator/normal.jpg",
                 "images/projects/calculator/pressed.jpg"
+            ],
+            "liveExample": "calculator"
+
+          },
+          {
+            "id": "ecard",
+            "name": "E-card",
+            "description": "This is an online business/personal 3d card made only with CSS.",
+            "repository": "https://github.com/gsoldateli/e-card",
+            "live": "https://gsoldateli.github.io/e-card/",
+            "images": [
+                "images/projects/card/1.jpg",
+                "images/projects/card/2.jpg"
+            ],
+            "liveExample": "ecard"
+          },
+          {
+            "id": "accordion",
+            "name": "Accordion",
+            "description": "This is an accordion made in two versions: CSS only and Javascript enhanced.",
+            "repository": "https://github.com/gsoldateli/accordion",
+            "live": "https://gsoldateli.github.io/accordion/js/",
+            "images": [
+                "images/projects/accordion/1.jpg",
+                "images/projects/accordion/2.jpg"
+            ],
+            "liveExample": "accordion"
+          },
+          {
+            "id": "forms",
+            "name": "Forms",
+            "description": "This is an accordion made in two versions: CSS only and Javascript enhanced.",
+            "repository": "https://github.com/gsoldateli/accordion",
+            "live": "https://gsoldateli.github.io/accordion/js/",
+            "images": [
+                "images/projects/forms/12.jpg",
+                "images/projects/forms/3.jpg",
+                "images/projects/forms/forms.gif"
+            ],
+            "seeBig": "https://gsoldateli.github.io/forms/billing/"
+          },
+          {
+            "id": "gallery",
+            "name": "Image gallery",
+            "description": "This is an CSS + JS image gallery featuring: - Animations on image transitions. <br>- Swipe for mobile devices.",
+            "repository": "https://github.com/gsoldateli/accordion",
+            "live": "https://gsoldateli.github.io/accordion/js/",
+            "images": [
+                "images/projects/gallery/1.jpg",
+                "images/projects/gallery/2.jpg"
+            ],
+            "liveExample": "gallery"
+
+          },
+          {
+            "id": "modal-example",
+            "name": "Modal",
+            "description": "This is an CSS + JS responsive modal.",
+            "repository": "https://github.com/gsoldateli/modal",
+            "live": "https://gsoldateli.github.io/modal/",
+            "images": [
+                "images/projects/modal/1.jpg",
+                "images/projects/modal/2.jpg"
+            ],
+            "liveExample": "modal-button"
+
+          },
+          {
+            "id": "shopping-cart",
+            "name": "Shopping Cart",
+            "description": "This is an CSS + JS shopping cart with discount functionalities.",
+            "repository": "https://github.com/gsoldateli/product-listing-page",
+            "live": "https://gsoldateli.github.io/product-listing-page/",
+            "images": [
+                "images/projects/cart/1.jpg",
+                "images/projects/cart/2.jpg",
+                "images/projects/cart/3.jpg",
+                "images/projects/cart/cart.gif"
+            ],
+            "seeBig": "https://gsoldateli.github.io/product-listing-page/"
+
+          },
+          {
+            "id": "graphs",
+            "name": "Graphs",
+            "description": "This is an CSS3 graph and bar loading with tooltips on hover.",
+            "repository": "https://github.com/gsoldateli/graph",
+            "live": "https://gsoldateli.github.io/graph/",
+            "images": [
+                "images/projects/graph/1.jpg",
+                "images/projects/graph/2.jpg",
+                "images/projects/graph/3.jpg"
             ]
+
           }
+          
         ]
     },
     "skills" : {

@@ -16,6 +16,7 @@ var config = {
     'js/libs/*.js',
     'js/templates/index.js', //Responsible for handling templates
     'js/load-templates.js', //Load datasource then run templates with it.
+    'js/templates/home.js', //Templates functions.
     'js/templates/*.js' //Templates functions.
     
   ],

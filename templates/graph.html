@@ -1,8 +1,8 @@
 <!-- GRAPH -->
 	<script id="skills-template" type="text/x-handlebars-template">
-		{{log this}}
-		{{>bar skills.skillbar}}
-		{{#with skills.areas}}
+		
+		{{>bar skillbar}}
+		{{#with areas}}
 		<div class="row">
 			<div class="col6">{{> graph frontend}}</div>
 			<div class="col6">{{> graph backend}}</div>
@@ -15,7 +15,6 @@
 	</script>
 
 	<script id="graph-template" type="text/x-handlebars-template">
-	
 	<div class="graph">
 		<h4 class="graph__title">{{name}}</h4>
 		<ul class="graph-label">
@@ -39,7 +38,6 @@
 	</div>	
 	</script>
 	<script id="bar-template" type="text/x-handlebars-template">
-		{{log this}}
 		{{#if this}}
 		<div class="horizontal-bar">
 			<div class="horizontal-bar__item horizontal-bar__item--frontend" style="width:{{front}}%;">{{front}}%</div>

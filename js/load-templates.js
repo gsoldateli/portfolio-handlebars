@@ -5,13 +5,11 @@
 		function(response) {
 			var head = document.querySelector('head');
 			head.innerHTML += response;
-
 			loadData();
 		});
 
 
 	function loadData(){ 
-		console.log('ajax',$ajax);
 		$ajax.jsonRequest(
 		'datasource/portfolio.json', 
 		function(response) {

@@ -18,13 +18,12 @@
 
 					//Only listen to clicks on menu-label elements.
 					if (clickedElement.className.indexOf('menu-label') > -1) {
-						self._toggleActive(clickedElement);
+						_toggleActive(clickedElement);
 					}
 				});
 			}
-		};
 
-		accordion._toggleActive = function(item) {
+var _toggleActive = function(item) {
 			var bodyEl = item.nextElementSibling;
 			//If item title is not active
 			if (item.className.indexOf('active') === -1) {
@@ -32,7 +31,7 @@
 				//item.className += ' active ';
 				item.classList.add('active');
 
-				bodyEl.style.height = (this._innerHeight(bodyEl)*1.3)+'px';
+				bodyEl.style.height = (_innerHeight(bodyEl)*1.3)+'px';
 			}
 			else {
 				//Desactivate it
@@ -45,7 +44,7 @@
 
 		};
 
-		accordion._innerHeight = function(el) {
+		var _innerHeight = function(el) {
 			height = 0;
 			var innerElements = el.querySelectorAll('*');
 			for(var i = 0; i< innerElements.length; i++ ) {
@@ -55,8 +54,12 @@
 			return height;
 		};
 
+		};
+
+		
 		window.$AC = accordion;
 
+		libraries.register(accordion.init);
 })(window);
 
 $AC.init();

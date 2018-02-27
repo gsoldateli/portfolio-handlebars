@@ -2,11 +2,23 @@
 <script id="carousel-template" type="text/x-handlebars-template">
 <div class="carousel">
 	<ul class="carousel__items">
-		{{#each this as |image|}}
+		{{#each images as |image|}}
 		<li class="carousel__item {{#if @first}}carousel__item--active{{/if}}">
 			<img data-src="{{image}}" alt="">
+			{{#if ../seeBig}}
+			<br>
+			<br>
+			<a href="#" data-modal-open="live-example" onclick="loadLiveExample('{{../seeBig}}');" class="btn btn--primary"><b>Click here to see it big!</b></a>
+			{{/if}}
 		</li>
 		{{/each}}
+	
+		{{#if liveExample}}
+		<li class="carousel__item">
+			{{> (lookup . 'liveExample') id=id }}
+		</li>
+			
+		{{/if}}
 	</ul>
 </div>
 </script>

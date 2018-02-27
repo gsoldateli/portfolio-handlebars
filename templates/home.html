@@ -1,0 +1,83 @@
+<!-- home template -->
+<script id="home-template" type="text/x-handlebars-template">
+{{#with portfolio}}
+<div id="canvas">
+	<input type="checkbox" name="menu-open" id="menu-open" class="menu-open" />
+	<nav class="navbar">
+		<div class="container">
+			<div class="row hide-on-small">
+				<div class="col3">
+					<div class="navbar__logo">{{name}}</div>
+				</div>
+				<div class="col6">
+					{{> menu-desktop}}
+				</div>
+				<div class="col3 search">
+					<input class="search__input" required name="search" id="search" type="text"/>
+					<label class="search__label" for="search">
+						SEARCH:
+					</label>					
+					<span data-modal-open="search" class="fa fa-search search__icon"></span>
+				</div>
+			</div>
+			<div class="row show-on-small">
+					<label for="menu-open" class="navbar__logo navbar__logo--lateral">{{name}}
+					</label>
+					<label for="menu-open" class="hamburguer">
+							<span class="hamburguer__item"></span>	
+					</label>		
+				
+			</div>			
+		</div>
+	</nav>
+	<div class="lateral-menu">
+		{{>menu-mobile}}
+	</div>
+	<label for="menu-open" class="overlay">Open Menu</label>
+	<div class="content-holder">
+	<section id="about-section" class="section about">
+		<div class="about__column clearfix">
+			<h1 class="about__title">{{{home.title}}}</h1>
+		</div>
+		<div class="about__column">
+			<img onclick="scrollToElement('#project-section',700);" src="images/hand-transparent.png" class="img-reponsive about__image" alt="">
+		</div>
+	</section>
+	<section id="project-section" class="section">
+		<div class="container">
+				{{> section-header projects}}
+			
+			<div class="section__content">
+				<div class="row">
+					{{>projects projects}}
+				</div>
+			</div>
+	</section>
+	<section id="skills-section" class="section">
+		<div class="container">
+			{{> section-header skills}}
+			<div class="section__content">
+				{{>skills skills}}
+				<div id="skills-holder"></div>
+				
+			</div>
+	</section>	
+
+	<section id="contact-section" class="section section--contact">
+			<div class="container">
+				{{> section-header contact}}
+				<div class="section__content">
+					{{> ecard id=footer}} 
+				</div>
+			</div>
+	</section>
+
+	<footer id="footer" class="footer">
+		<span  class="footer__copy">&copy; {{name}}.</span>
+	</footer>
+
+	</div>
+
+{{>modal-search}}
+{{/with}}
+</script>

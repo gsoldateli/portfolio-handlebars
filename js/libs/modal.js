@@ -34,6 +34,7 @@ function fadeIn(el){
 
 window.modal = function(idModal) {
   var modalOverlay = null;
+  console.log('[data-modal-id="'+ idModal +'"]');
   var modal = document.querySelector('[data-modal-id="'+ idModal +'"]');
 
   function _createOverlay() {
@@ -88,16 +89,22 @@ window.modal = function(idModal) {
   };
 }
 
-//Init modal openers
-var modalOpeners = document.querySelectorAll('[data-modal-open]');
+function init() {
+  //Init modal openers
+  var modalOpeners = document.querySelectorAll('[data-modal-open]');
 
-//Add fadeIn action on click event of all modal opener elements.
-for(var x=0; x< modalOpeners.length; x++) {
-  modalOpeners[x].addEventListener('click',function(){
-    var idModal = this.dataset.modalOpen;
-    window.modal(idModal).fadeIn();
-  });
+  //Add fadeIn action on click event of all modal opener elements.
+  for(var x=0; x< modalOpeners.length; x++) {
+    modalOpeners[x].addEventListener('click',function(){
+      var idModal = this.dataset.modalOpen;
+      console.log(idModal);
+      window.modal(idModal).fadeIn();
+    });
+  }
 }
+
+libraries.register(init);
+
 
 
 })(window);

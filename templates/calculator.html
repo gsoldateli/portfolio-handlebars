@@ -1,0 +1,37 @@
+<!-- CALCULATOR SEARCH --> 
+<script id="calculator-template" type="text/x-handlebars-template">
+<div class="calculator-container">
+	<input id="display" type="text" class="calculator-screen" disabled="" value="123456.000">
+	<div class="buttons-container">
+		<div class="numeric-pad">
+			<span class="button">1</span>
+			<span class="button">2</span>
+			<span class="button">3</span>
+			<span class="button">4</span>
+			<span class="button">5</span>
+			<span class="button">6</span>
+			<span class="button">7</span>
+			<span class="button">8</span>
+			<span class="button">9</span>
+			<span class="button">0</span>					
+			<span class="button">.</span>					
+			<span class="button" onclick="calc.equals();">=</span>					
+		</div>
+		<div class="operation-pad">
+			<span class="button">÷</span>					
+			<span class="button">X</span>										
+			<span class="button">-</span>										
+			<span class="button">+</span>										
+		</div>
+		<div class="clear-pad">
+			<div class="button" onclick="calc.clear();">
+				CLEAR
+			</div>
+			<div class="button right" onclick="calc.del();">
+				DEL
+			</div>					
+		</div>
+	</div>
+</div>
+</script>
+<!-- END CALCULATOR -->

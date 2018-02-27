@@ -11,6 +11,8 @@ window.requestAnimFrame = (function() {
 
 //This is an adaptation from https://stackoverflow.com/questions/17722497/scroll-smoothly-to-specific-element-on-page
 (function(window){
+
+  function init(){
   var self = this;
 
   //TODO Flexbilize this code.
@@ -75,7 +77,9 @@ window.requestAnimFrame = (function() {
   };
 
   window.scrollToElement = self.scrollToElement;
-  
+  };
+
+  libraries.register(init);
 
 })(window);
 

@@ -7,3 +7,5 @@ It was made just for **study purposes** since SEO will be critically strike down
   * Gulp: Minify and manage multiple templates into one .html file.
 
 [**>>> SEE IT LIVE**](https://gsoldateli.github.io/portfolio-handlebars/)
+
+![Screenshot](https://i.imgur.com/03qq0ut.jpg)

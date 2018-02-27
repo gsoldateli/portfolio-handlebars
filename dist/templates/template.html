@@ -1,0 +1,407 @@
+<!-- accordion --> 
+<script id="accordion-template" type="text/x-handlebars-template">
+<div id="ac1" class="accordion">
+	  <ul>
+		<li class="menu-item">
+	    	<h3 class="menu-label">Appetizers</h3>
+	    	<div class="menu-body" style="height: 0px;">
+	    		<h3 class="menu-body-title">Check our tasty apps!</h3>
+	    		<strong class="menu-body-category">Happy hour menu - half off!!</strong>
+	    		<p class="menu-option">Chicken Wings (6) - 5.99$</p>
+	    		<p class="menu-option">Calamari - 7.99$</p>
+	    		<p class="menu-option">Garlic breaded pickles - 4.59$</p>
+	    	</div>
+	    </li>
+
+	    <!-- Item 2 -->
+	    <li class="menu-item">
+	    	
+	    	<h3 class="menu-label">Entrees</h3>
+	    	<div class="menu-body">
+	    		<h3 class="menu-body-title">Choose from a wide range of pastas, combos and signature dishes</h3>
+	    		<strong class="menu-body-category">Pastas</strong>
+	    		<p class="menu-option">Chicken Picatta - 14.99$</p>
+	    		<p class="menu-option">Chicken Pollo - 12.99$</p>
+	    		<p class="menu-option">Lasagna (Chicken/Beef) - 10.99$</p>
+
+	    		<strong class="menu-body-category">Combos</strong>
+	    		<p class="menu-option">Italian Sausage &amp; Beef Combo - 15.99$</p>
+	    		<p class="menu-option">Mac n Cheese with Chicken Tenders - 8.99$</p>		    		
+	    	</div>
+	    </li>
+
+	    <!-- Item 3 -->
+	    <li class="menu-item">
+	    	<h3 class="menu-label">Desserts</h3>
+	    	<div class="menu-body">
+	    		<h3 class="menu-body-title">New Summer specials!!</h3>
+	    		<strong class="menu-body-category">Shakes and Ice Creams!!</strong>
+	    		<p class="menu-option">Turtle Caramel Shake - 6.99$</p>
+	    		<p class="menu-option">Chocolate Brownie - 4.99$</p>
+	    	</div>
+	    </li>
+	  </ul>
+</div>
+</script>
+<!-- CALCULATOR SEARCH --> 
+<script id="calculator-template" type="text/x-handlebars-template">
+<div class="calculator-container">
+	<input id="display" type="text" class="calculator-screen" disabled="" value="123456.000">
+	<div class="buttons-container">
+		<div class="numeric-pad">
+			<span class="button">1</span>
+			<span class="button">2</span>
+			<span class="button">3</span>
+			<span class="button">4</span>
+			<span class="button">5</span>
+			<span class="button">6</span>
+			<span class="button">7</span>
+			<span class="button">8</span>
+			<span class="button">9</span>
+			<span class="button">0</span>					
+			<span class="button">.</span>					
+			<span class="button" onclick="calc.equals();">=</span>					
+		</div>
+		<div class="operation-pad">
+			<span class="button">÷</span>					
+			<span class="button">X</span>										
+			<span class="button">-</span>										
+			<span class="button">+</span>										
+		</div>
+		<div class="clear-pad">
+			<div class="button" onclick="calc.clear();">
+				CLEAR
+			</div>
+			<div class="button right" onclick="calc.del();">
+				DEL
+			</div>					
+		</div>
+	</div>
+</div>
+</script>
+<!-- END CALCULATOR -->
+<!-- MODAL SEARCH --> 
+<script id="card-template" type="text/x-handlebars-template">
+<section class="card-container">
+<input type="checkbox" name="card__toggle{{id}}" id="card__toggle{{id}}" class="card__toggle">
+<div class="card">
+					    <label for="card__toggle{{id}}" class="card__side card__side--front">
+					    	<span class="contact">
+					    		<div class="contact__head">
+					    			<h4 class="contact__name">Guilherme Soares Soldateli</h4>
+					    			<span class="contact__profession">Student</span>
+					    		</div>
+					    		<span class="contact__social">
+						    		<ul class="social">
+						    			<li class="social__item">
+						    				<a href="http://facebook.com/guilherme.gaulois" class="social__link social__link--facebook fa fa-facebook"></a>
+						    			</li>
+						    			<li class="social__item">
+						    				<a href="https://www.instagram.com/guisoldateli/" class="social__link social__link--instagram fa fa-instagram"></a>
+						    			</li>
+						    			<li class="social__item">
+						    				<a href="https://github.com/gsoldateli" class="social__link social__link--github fa fa-github"></a>
+						    			</li>
+											<li class="social__item">
+						    				<a href="https://www.linkedin.com/in/guilherme-soldateli-28281b54" class="social__link social__link--linkedin fa fa-linkedin"></a>
+						    			</li>								    									    									    			
+						    		</ul>	
+					    		</span>
+					    		
+					    		<span class="contact__footer">
+					    			<a class="contact__email" href="mailto://guilherm3soldateli@gmail.com">guilherm3soldateli@gmail.com</a>&nbsp;&nbsp;&nbsp;
+					    			<i class="contact__arrow fa fa-2x fa-arrow-right"></i>
+					    		</span>
+					    	</span>
+					    </label>
+					    <label for="card__toggle{{id}}" class="card__side card__side--back"></label>
+					  </div>
+</section>
+</script>
+<!-- END CARD -->
+<!-- CAROUSSEL -->
+<script id="carousel-template" type="text/x-handlebars-template">
+<div class="carousel">
+	<ul class="carousel__items">
+		{{#each images as |image|}}
+		<li class="carousel__item {{#if @first}}carousel__item--active{{/if}}">
+			<img data-src="{{image}}" alt="">
+			{{#if ../seeBig}}
+			<br>
+			<br>
+			<a href="#" data-modal-open="live-example" onclick="loadLiveExample('{{../seeBig}}');" class="btn btn--primary"><b>Click here to see it big!</b></a>
+			{{/if}}
+		</li>
+		{{/each}}
+	
+		{{#if liveExample}}
+		<li class="carousel__item">
+			{{> (lookup . 'liveExample') id=id }}
+		</li>
+			
+		{{/if}}
+	</ul>
+</div>
+</script>
+<!-- END CAROUSSEL -->
+<!-- Gallery -->
+<script id="gallery-template" type="text/x-handlebars-template">
+<div class="gallery-container">
+		<div class="backimage fadein" style="background-image: url('https://gsoldateli.github.io/gallery/images/carro1.jpg');"></div>
+		<!-- Thumbnails at the top -->
+      <nav class="gallery-nav">
+        <article class="gallery-item active">
+          <img class="gallery-item" src="https://gsoldateli.github.io/gallery/images/carro1.jpg" alt="">
+        </article>
+        <article class="gallery-item">
+          <img class="gallery-item" src="https://gsoldateli.github.io/gallery/images/carro2.jpg" alt="">
+        </article>
+        <article class="gallery-item">
+          <img class="gallery-item" src="https://gsoldateli.github.io/gallery/images/carro3.jpg" alt="">
+        </article>
+        <article class="gallery-item">
+          <img class="gallery-item" src="https://gsoldateli.github.io/gallery/images/carro4.jpg" alt="">
+        </article>  
+        <article class="gallery-item">
+          <img class="gallery-item" src="https://gsoldateli.github.io/gallery/images/carro5.jpg" alt="">
+        </article>                                
+        
+      </nav>
+	</div>
+</script>
+<!-- GRAPH -->
+	<script id="skills-template" type="text/x-handlebars-template">
+		
+		{{>bar skillbar}}
+		{{#with areas}}
+		<div class="row">
+			<div class="col6">{{> graph frontend}}</div>
+			<div class="col6">{{> graph backend}}</div>
+		</div>
+		<div class="row">
+			<div class="col3">&nbsp;</div>
+			<div class="col6 ">{{> graph life}}</div>
+		</div>
+		{{/with}}
+	</script>
+
+	<script id="graph-template" type="text/x-handlebars-template">
+	<div class="graph">
+		<h4 class="graph__title">{{name}}</h4>
+		<ul class="graph-label">
+			<li class="graph-label__item">Expert</li>
+			<li class="graph-label__item">Proficient</li>
+			<li class="graph-label__item">Competent</li>
+			<li class="graph-label__item">Learning</li>
+		</ul>
+		<ul class="graph-bars">
+			{{#each skills as |skill|}}
+				{{#with skill}}
+				<li class="graph-bar__item">
+					<div class="graph-bar__bar graph-bar__bar--{{expertise}}">
+						<span class="graph-bar__item-label">{{label}}</span> 
+						<span class="tooltip"><b>{{time}}:</b> {{timelabel}}</span>
+					</div>
+				</li>
+				{{/with}}
+			{{/each}}
+		</ul>
+	</div>	
+	</script>
+	<script id="bar-template" type="text/x-handlebars-template">
+		{{#if this}}
+		<div class="horizontal-bar">
+			<div class="horizontal-bar__item horizontal-bar__item--frontend" style="width:{{front}}%;">{{front}}%</div>
+			<div class="horizontal-bar__item horizontal-bar__item--backend" style="width:{{back}}%;">{{back}}%</div>
+		</div>
+		{{/if}}
+	</script>
+	<!-- END GRAPH -->
+<!-- home template -->
+<script id="home-template" type="text/x-handlebars-template">
+{{#with portfolio}}
+<div id="canvas">
+	<input type="checkbox" name="menu-open" id="menu-open" class="menu-open" />
+	<nav class="navbar">
+		<div class="container">
+			<div class="row hide-on-small">
+				<div class="col3">
+					<div class="navbar__logo">{{name}}</div>
+				</div>
+				<div class="col6">
+					{{> menu-desktop}}
+				</div>
+				<div class="col3 search">
+					<input class="search__input" required name="search" id="search" type="text"/>
+					<label class="search__label" for="search">
+						SEARCH:
+					</label>					
+					<span data-modal-open="search" class="fa fa-search search__icon"></span>
+				</div>
+			</div>
+			<div class="row show-on-small">
+					<label for="menu-open" class="navbar__logo navbar__logo--lateral">{{name}}
+					</label>
+					<label for="menu-open" class="hamburguer">
+							<span class="hamburguer__item"></span>	
+					</label>		
+				
+			</div>			
+		</div>
+	</nav>
+	<div class="lateral-menu">
+		{{>menu-mobile}}
+	</div>
+	<label for="menu-open" class="overlay">Open Menu</label>
+	<div class="content-holder">
+	<section id="about-section" class="section about">
+		<div class="about__column clearfix">
+			<h1 class="about__title">{{{home.title}}}</h1>
+		</div>
+		<div class="about__column">
+			<img onclick="scrollToElement('#project-section',700);" src="images/hand-transparent.png" class="img-reponsive about__image" alt="">
+		</div>
+	</section>
+	<section id="project-section" class="section">
+		<div class="container">
+				{{> section-header projects}}
+			
+			<div class="section__content">
+				<div class="row">
+					{{>projects projects}}
+				</div>
+			</div>
+	</section>
+	<section id="skills-section" class="section">
+		<div class="container">
+			{{> section-header skills}}
+			<div class="section__content">
+				{{>skills skills}}
+				<div id="skills-holder"></div>
+				
+			</div>
+	</section>	
+
+	<section id="contact-section" class="section section--contact">
+			<div class="container">
+				{{> section-header contact}}
+				<div class="section__content">
+					{{> ecard id=footer}} 
+				</div>
+			</div>
+	</section>
+
+	<footer id="footer" class="footer">
+		<span  class="footer__copy">&copy; {{name}}.</span>
+	</footer>
+
+	</div>
+  {{> modalsearch}}
+  {{> modallive}}
+
+{{/with}}
+</script>
+<!-- MENUS -->
+	<script id="menu-desktop-template" type="text/x-handlebars-template">
+		<ul class="menu">
+			{{#each menu as |item|}}
+				<li><a onclick="scrollToElement('{{item.goto}}'); return false;" href="#" class="col3 menu__link">
+					{{item.label}}
+			</a></li>
+			{{/each}}
+		</ul>
+	</script>
+	<script id="menu-mobile-template" type="text/x-handlebars-template">
+		<ul class="menu menu--sidebar">
+			{{#each menu as |item|}}
+				<li><a onclick="scrollToElement('{{item.goto}}',600,closeLateralMenu); return false;" href="#" class="col12 menu__link">
+							{{item.label}}
+					</a></li>
+			{{/each}}		
+		</ul>		
+		<div class="disclaimer">
+			<span class="tooltip">Do <b>you</b> know this website was developed by <b>Guilherme Soldateli</b> in 2017?</span>
+			<img src="images/dog.png" class="disclaimer__image" alt="Dog reading newspaper"/>
+		</div>
+	</script>
+	<!-- END MENUS -->
+<!-- Modal Example Button -->
+<script id="modal-button-template" type="text/x-handlebars-template">
+<div class="modal-live">
+	<button class="btn btn--attention" data-modal-open="example">Click here to open modal!</button>
+</div>
+<div style="display:none;">
+<div data-modal-id="example" class="modal__container">
+			<h4 class="modal__title">Hi there! This is an example modal.</h4>
+			<div class="modal__body">Click the button below to close this modal.</div>
+			<div class="modal__footer">
+				<button data-close class="modal__button">Close</button>
+			</div>
+		</div>
+</div>
+</script>
+<!-- MODAL Live -->
+<script id="modal-live-template" type="text/x-handlebars-template">
+<div data-modal-id="live-example" class="modal__container modal__container--fullscreen">
+			<a class="btn btn--primary" data-close ><span class="fa fa-close"></span> Close this example</a>
+			<iframe class="iframe-live" frameborder="0"></iframe>
+</div>
+</script>
+<!-- END MODAL Live -->
+<!-- MODAL SEARCH -->
+<script id="modal-search-template" type="text/x-handlebars-template">
+<div data-modal-id="search" class="modal__container"> 
+			<h4 class="modal__title">Sorry! Search is not available! :( </h4>
+			<div class="modal__body">
+				As soon as possible this amazing search will be running.
+				
+			</div>
+			<div class="modal__footer">
+				<button data-close class="modal__button">Close</button>
+				<span>The window width is <span class="window-width-label"></span>px</span>
+			</div>
+		</div>
+</div>
+</script>
+<!-- END MODAL SEARCH -->
+<script id="section-header-template" type="text/x-handlebars-template">
+	<h4 class="section__title">{{title}}</h4>
+	<p class="section__description">{{{description}}}</p>
+</script> 
+<!-- TABS -->
+	<script id="tabs-template" type="text/x-handlebars-template">
+			<div class="col2">
+				{{> tab-list this.items}}
+			</div>
+			<div class="col10 tab__container">
+				{{>tab-content this.items}}
+			</div>
+	</script>
+	<script id="tabs-tab-list-template" type="text/x-handlebars-template">
+		<ul id="tabs" class="tab">
+			{{#each this as |project| }}
+				<li class="tab__title tab__title--{{#if @first}}selected{{/if}}" data-tab-id="tab-{{project.id}}">{{project.name}}</li>
+			{{/each}}
+		</ul>
+	</script>
+
+	<script id="tabs-tab-content-template" type="text/x-handlebars-template">
+		{{#each this as |project| }}
+				<span class="tab__title tab__title--selected" data-tab-id="tab-{{project.id}}">{{project.name}}</span>
+
+			
+			<div class="tab__content tab__content--{{#if @first}}selected{{/if}}" data-content-id="tab-{{project.id}}">
+				{{>carousel images=project.images liveExample=liveExample seeBig=seeBig}}
+				<article class="project">
+					<h4 class="project__title">{{project.name}}</h4>
+					<p  class="project__description">{{{project.description}}}</p>
+					<span class="project__links">
+						<a  href="{{project.live}}" target="__BLANK" class="btn btn--primary"> <span class="fa fa-globe"></span> Live Example</a> 
+						<a href="{{project.repository}}" target="__BLANK" class="btn btn--discrete"> <span class="fa fa-github"></span> Link to github</a>
+					</span>
+				</article>
+
+			</div>					
+			{{/each}}		
+	</script>
+	<!-- END TABS -->

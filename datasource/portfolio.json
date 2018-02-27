@@ -143,7 +143,7 @@
         },
     	"areas": {
     		"frontend": {
-    			"name": "Frontend Devlopment",
+    			"name": "Frontend Development",
     			"skills": [
     				{
     					"label": "Javascript",
@@ -178,37 +178,37 @@
     			
     		},
             "backend": {
-    			"name": "Backend Devlopment",
+    			"name": "Backend Development",
     			"skills": [
     				{
-    					"label": "Javascript",
+    					"label": "PHP",
     					"expertise": "competent",
-    					"time": "3 Years",
-    					"timelabel": "Monkey Coding"
+    					"time": "6 Years",
+    					"timelabel": "Making it happen"
     				},
     				{
-    					"label": "CSS",
+    					"label": "NodeJs",
     					"expertise": "competent",
-    					"time": "3 Years",
-    					"timelabel": "Making it work"
+    					"time": "Couple of weeks",
+    					"timelabel": "Experiencing it."
     				},
     				{
-    					"label": "jQuery",
+    					"label": "MySQL",
     					"expertise": "proficient",
-    					"time": "3 Years",
-    					"timelabel": "Being dependent on it."
+    					"time": "5 Years",
+    					"timelabel": "Storing stuff here."
     				},
     				{
-    					"label": "Bootstrap",
+    					"label": "PostgreSQL",
     					"expertise": "proficient",
-    					"time": "3 Years",
-    					"timelabel": "Being dependent on it."
+    					"time": "6 Years",
+    					"timelabel": "Loving it."
     				},
     				{
-    					"label": "Tooling",
+    					"label": "Apache",
     					"expertise": "",
     					"time": "6 Months",
-    					"timelabel": " Getting my hands on ( npm | gulp | grunt)."
+    					"timelabel": " Having fun with .htaccess + vhosts + php server configuration."
     				}
     			]
     		},
@@ -216,34 +216,34 @@
     			"name": "Life Skills",
     			"skills": [
     				{
-    					"label": "Javascript",
+    					"label": "Backpacking",
     					"expertise": "competent",
-    					"time": "3 Years",
-    					"timelabel": "Monkey Coding"
+    					"time": "1 Years",
+    					"timelabel": " Hanging out around South America."
     				},
     				{
-    					"label": "CSS",
+    					"label": "Karate",
+    					"expertise": "learning",
+    					"time": "1 Years",
+    					"timelabel": " Failing almost every movement, but improving."
+    				},
+    				{
+    					"label": "Public speaking",
     					"expertise": "competent",
-    					"time": "3 Years",
-    					"timelabel": "Making it work"
+    					"time": "Since basic school",
+    					"timelabel": "Butterflies on the stomach, but delivering the message!"
     				},
     				{
-    					"label": "jQuery",
-    					"expertise": "proficient",
-    					"time": "3 Years",
-    					"timelabel": "Being dependent on it."
+    					"label": "Pet sitting",
+    					"expertise": "expert",
+    					"time": "Whole life",
+    					"timelabel": "around dogs Woof! Woof!"
     				},
     				{
-    					"label": "Bootstrap",
-    					"expertise": "proficient",
-    					"time": "3 Years",
-    					"timelabel": "Being dependent on it."
-    				},
-    				{
-    					"label": "Tooling",
+    					"label": "Bartending",
     					"expertise": "",
-    					"time": "6 Months",
-    					"timelabel": " Getting my hands on ( npm | gulp | grunt)."
+    					"time": "4 Months",
+    					"timelabel": "Earning tips by making drinks."
     				}
     			]
     		}

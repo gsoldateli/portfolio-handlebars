@@ -101,6 +101,8 @@ function init() {
       window.modal(idModal).fadeIn();
     });
   }
+  //I dont know where to put it.
+  windowWidthCount();
 }
 
 libraries.register(init);

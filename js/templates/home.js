@@ -6,7 +6,8 @@
 		Handlebars.registerPartial('gallery',document.getElementById('gallery-template').innerHTML);
 		Handlebars.registerPartial('modal-button',document.getElementById('modal-button-template').innerHTML);
 		Handlebars.registerPartial('calculator',document.getElementById('calculator-template').innerHTML);
-		Handlebars.registerPartial('modal-search',document.getElementById('modal-search-template').innerHTML);
+		Handlebars.registerPartial('modalsearch',document.getElementById('modal-search-template').innerHTML);
+		Handlebars.registerPartial('modallive',document.getElementById('modal-live-template').innerHTML);
 
 		//Page
 		Handlebars.registerPartial('menu-desktop',document.getElementById('menu-desktop-template').innerHTML);

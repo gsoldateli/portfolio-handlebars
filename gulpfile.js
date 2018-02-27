@@ -21,7 +21,10 @@ var config = {
     
   ],
   templatesIn: 'templates/**/*.html',
-	cssIn: 'css/**/*.css',
+	cssIn: [
+    'css/global.css',
+    'css/**/*.css'
+  ],
 	cssOut: 'dist/css/',
 	cssOutName: 'style.min.css',
 	jsOut: 'dist/js/',
